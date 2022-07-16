@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Wilkerson\n    300\n  output: |\n    Qual é o nome do(a) vendedor(a)? Qual é o valor da venda? O valor da comissão para o(a) vendedor(a) Wilkerson é R$ 15.00.\n\n- input: |\n    Wilkerson\n    600\n  output: |\n    Qual é o nome do(a) vendedor(a)? Qual é o valor da venda? O valor da comissão para o(a) vendedor(a) Wilke é R$ 60.00.\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Comissão\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5946530206842880,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 5946530206842880,
+  "key": "5946530206842880",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

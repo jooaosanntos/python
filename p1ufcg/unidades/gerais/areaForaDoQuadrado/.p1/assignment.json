@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    4\n  output: |\n    Área não comum: 18.26548\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Área fora do Quadrado\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5307744049430528,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 5307744049430528,
+  "key": "5307744049430528",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

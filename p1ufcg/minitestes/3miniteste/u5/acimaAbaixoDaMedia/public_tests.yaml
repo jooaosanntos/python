@@ -1,0 +1,18 @@
+- input: |
+    50
+    40
+    -1
+  name: exemplo 1
+  output: |
+    50 > 45.000
+    40 < 45.000
+
+- input: |
+    50
+    40
+    20
+  name: exemplo 2
+  output: |
+    50 > 45.000
+    40 < 45.000
+

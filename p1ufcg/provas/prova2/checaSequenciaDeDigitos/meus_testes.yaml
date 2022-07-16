@@ -1,0 +1,99 @@
+### Meus testes
+
+## Testes para caso 1
+# Encontro de 6 ímpares
+- input: |
+    12345672191
+    42
+  output: |
+    soma: 40
+    números lidos: 10 de 11
+    critério de parada: 6 ímpares
+
+## Testes para caso 2
+# Soma igual ao valor limite
+- input: |
+    125237
+    10
+  output: |
+    soma: 10
+    números lidos: 4 de 6
+    critério de parada: limite
+
+# Soma maior que valor limite
+- input: |
+    125237
+    9
+  output: |
+    soma: 10
+    números lidos: 4 de 6
+    critério de parada: limite
+
+## Testes para caso 3
+# Fim da sequência
+- input: |
+    111123
+    10
+  output: |
+    soma: 9
+    números lidos: 6 de 6
+    critério de parada: final da sequência
+
+## Testes para caso 1 e caso 2
+# 6 ímpares e soma maior ou igual ao valor limite
+- input: |
+    12345672392
+    42
+  output: |
+    soma: 42
+    números lidos: 10 de 11
+    critério de parada: 6 ímpares
+
+## Testes para caso 2 e 3
+# Soma maior ou igual ao valor limite e final da sequência
+- input: |
+    1234567238
+    41
+  output: |
+    soma: 41
+    números lidos: 10 de 10
+    critério de parada: limite
+
+## Teste para casos 1 e 3
+# 6 ímpares e final da sequência
+- input: |
+    1234567239
+    45
+  output: |
+    soma: 42
+    números lidos: 10 de 10
+    critério de parada: 6 ímpares
+
+## Teste para casos 1, 2 e 3
+# 6 ímpares, soma maior ou igual ao valor limite e final da sequência
+- input: |
+    1234567239
+    42
+  output: |
+    soma: 42
+    números lidos: 10 de 10
+    critério de parada: 6 ímpares
+
+## Teste para casos especiais
+# Apenas um valor digitado e limite
+- input: |
+    3
+    2
+  output: |
+    soma: 3
+    números lidos: 1 de 1
+    critério de parada: limite
+
+# Apenas um valor digitado e final da sequência
+- input: |
+    4
+    5
+  output: |
+    soma: 4
+    números lidos: 1 de 1
+    critério de parada: final da sequência

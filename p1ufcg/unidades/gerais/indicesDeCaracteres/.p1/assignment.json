@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    ola mundo\n    aso\n  output: |\n    2\n    -1\n    0 8\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Índices de caracteres\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5910747592785920,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 5910747592785920,
+  "key": "5910747592785920",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

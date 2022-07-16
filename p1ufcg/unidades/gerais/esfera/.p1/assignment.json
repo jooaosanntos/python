@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    4.0\n  name: exemplo\n  output: |\n    201.06\n    268.08\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Esfera\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5815715703554048,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 5815715703554048,
+  "key": "5815715703554048",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

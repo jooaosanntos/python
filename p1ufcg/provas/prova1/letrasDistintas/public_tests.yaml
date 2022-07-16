@@ -1,0 +1,73 @@
+# Algumas letras são distintas
+- input: |
+    universidade
+    verdade
+  output: |
+    5
+
+- input: |
+    arco-iris
+    arcondicionado
+  output: |
+    2
+
+- input: |
+    casa
+    nasa
+  output: |
+    1
+
+# Todas as letras são distintas
+- input: |
+    touro
+    casa
+  output: |
+    5
+
+- input: |
+    casa
+    touro
+  output: |
+    4
+
+- input: |
+    casa
+    pino
+  output: |
+    4
+
+- input: |
+    a
+    touro
+  output: |
+    1
+
+- input: |
+    u
+    o
+  output: |
+    1
+# Nenhuma letra é distinta
+- input: |
+    ouro
+    touro
+  output: |
+    0
+
+- input: |
+    ouro
+    ouro
+  output: |
+    0
+
+- input: |
+    a
+    casa
+  output: |
+    0
+
+- input: |
+    o
+    o
+  output: |
+    0

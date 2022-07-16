@@ -1,0 +1,12 @@
+- input: |
+    100
+    50
+    demanda 20
+    chuva 60
+    demanda 10
+    afluente 30
+    chuva 20
+    demanda 20
+  output: |
+    Açude passou a liberar água.
+    Nível: 110.00

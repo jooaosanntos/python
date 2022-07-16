@@ -1,0 +1,26 @@
+- input: |
+    1
+    2
+    3
+    4
+  name: exemplo
+  output: |
+    141
+
+- input: |
+    0
+    0
+    0
+    0
+  name: teste1
+  output: |
+    0
+
+- input: |
+    350
+    96
+    86
+    23
+  name: teste2
+  output: |
+    34960286

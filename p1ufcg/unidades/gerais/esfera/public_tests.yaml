@@ -1,0 +1,20 @@
+- input: |
+    4.0
+  name: exemplo
+  output: |
+    201.06
+    268.08
+
+- input: |
+    10
+  name: teste1
+  output: |
+    1256.64
+    4188.79
+
+- input: |
+    0
+  name: teste2
+  output: |
+    0.00
+    0.00

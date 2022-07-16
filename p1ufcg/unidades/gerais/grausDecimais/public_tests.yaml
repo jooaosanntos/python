@@ -1,0 +1,23 @@
+- input: |
+    21
+    8
+    43
+  name: exemplo1
+  output: |
+    graus = 21.1453
+
+- input: |
+    21
+    0
+    0
+  name: exemplo1
+  output: |
+    graus = 21.0000
+
+- input: |
+    21
+    30
+    0
+  name: exemplo1
+  output: |
+    graus = 21.5000

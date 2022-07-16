@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    5\n    1\n    125\n    72\n    30\n    45\n    23\n    47\n  name: test_name\n  output: |\n    ---\n    1 antes\n    2 entre\n    2 depois\n\n- input: |\n    5\n    1\n    2\n    3\n    4\n    5\n    23\n    47\n  name: test_name\n  output: |\n    ---\n    5 antes\n    0 entre\n    0 depois\n\n- input: |\n    6\n    100\n    23\n    43\n    1\n    -7\n    15\n    0\n    16\n  name: test_name\n  output: |\n    ---\n    1 antes\n    2 entre\n    3 depois\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Conta Números\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5597097707438080,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 5597097707438080,
+  "key": "5597097707438080",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,76 @@
+- input: |
+    5
+    1
+    125
+    72
+    30
+    45
+    23
+    47
+  name: test_name
+  output: |
+    ---
+    1 antes
+    2 entre
+    2 depois
+
+- input: |
+    5
+    1
+    2
+    3
+    4
+    5
+    23
+    47
+  name: test_name
+  output: |
+    ---
+    5 antes
+    0 entre
+    0 depois
+
+- input: |
+    6
+    100
+    23
+    43
+    1
+    -7
+    15
+    0
+    16
+  name: test_name
+  output: |
+    ---
+    1 antes
+    2 entre
+    3 depois
+
+- input: |
+    3
+    1
+    2
+    3
+    1
+    3
+  name: test_name
+  output: |
+    ---
+    0 antes
+    1 entre
+    0 depois
+
+- input: |
+    3
+    2
+    2
+    2
+    1
+    3
+  name: test_name
+  output: |
+    ---
+    0 antes
+    3 entre
+    0 depois

@@ -1,0 +1,55 @@
+# Existem alguns números menores do que a média
+- input: |
+    5
+    3
+    11
+    6
+    4
+    1
+  name: test_do_exemplo
+  output: |
+    11
+
+- input: |
+    3
+    4
+    3
+    3
+  name: test_1
+  output: |
+    10
+
+- input: |
+    2
+    3
+    2
+  name: test_2
+  output: |
+    5
+
+# Nenhum número é menor do que a média
+- input: |
+    5
+    3
+    3
+    3
+    3
+    3
+  name: test_3
+  output: |
+    3
+
+- input: |
+    2
+    3
+    3
+  name: test_4
+  output: |
+    3
+
+- input: |
+    1
+    2
+  name: test_5
+  output: |
+    2

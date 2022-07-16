@@ -1,0 +1,71 @@
+- input: |
+    Antônio
+    5
+  output: |
+    Antônio, 5 anos, Infantil A.
+
+- input: |
+    André
+    9
+  output: |
+    André, 9 anos, Infantil B.
+
+- input: |
+    Eduardo
+    3
+  output: |
+    Eduardo, 3 anos, Não pode competir.
+
+- input: |
+    Betinho
+    4
+  output: |
+    Betinho, 4 anos, Não pode competir.
+
+- input: |
+    Flora Maria
+    7
+  output: |
+    Flora Maria, 7 anos, Infantil A.
+
+- input: |
+    Isa Adora
+    8
+  output: |
+    Isa Adora, 8 anos, Infantil B.
+
+- input: |
+    Enedenair
+    10
+  output: |
+    Enedenair, 10 anos, Infantil B.
+
+- input: |
+    Josepi cadura
+    11
+  output: |
+    Josepi cadura, 11 anos, Juvenil A.
+
+- input: |
+    Mario
+    13
+  output: |
+    Mario, 13 anos, Juvenil A.
+
+- input: |
+    Deide Costa
+    14
+  output: |
+    Deide Costa, 14 anos, Juvenil B.
+
+- input: |
+    Jacinto Leite Aquino Rego
+    17
+  output: |
+    Jacinto Leite Aquino Rego, 17 anos, Juvenil B.
+
+- input: |
+    Ana Maria Brega
+    145
+  output: |
+    Ana Maria Brega, 145 anos, Senior.

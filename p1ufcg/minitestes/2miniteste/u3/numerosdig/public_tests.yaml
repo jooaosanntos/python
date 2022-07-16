@@ -1,0 +1,48 @@
+- input: |
+    3
+    -7
+    2
+  output: |
+    0
+
+- input: |
+    5
+    5
+    5
+  output: |
+    3
+
+- input: |
+    0
+    0
+    2
+  output: |
+    2
+
+- input: |
+    3
+    3
+    1
+  output: |
+    2
+
+- input: |
+    2
+    2
+    0
+  output: |
+    2
+
+- input: |
+    0
+    2
+    2
+  output: |
+    2
+
+- input: |
+    2
+    0
+    2
+  output: |
+    2

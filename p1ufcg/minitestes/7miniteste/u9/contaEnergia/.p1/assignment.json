@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "# coding: utf-8\nimport unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global calcula_conta\n        undertest = __import__(module)\n        calcula_conta = getattr(undertest, 'calcula_conta', None)\n\n    def test_1(self):\n        tabela = [[\"Equipamento\", \"Quantidade\", \"Tempo de Uso (horas)\", \"Potencia (Watts)\"], [\"AR-CONDICIONADO\", 1, 240, 2000], [\"COMPUTADOR\", 2, 150, 180], [\"TV\", 3, 150, 110]]\n\n        assert calcula_conta(tabela) == \"R$ 163.38\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Conta Energia\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6372385106165760,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 6372385106165760,
+  "key": "6372385106165760",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

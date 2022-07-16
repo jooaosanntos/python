@@ -1,0 +1,45 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global colapsa_n_menores \n        undertest = __import__(module)\n        colapsa_n_menores = getattr(undertest, 'colapsa_n_menores', None)\n\n    def test_exemplo(self):\n        nums = [12, 3, 7, 1, 5, 10]\n        colapsa_n_menores(3, nums)\n        assert nums == [12, 7, 10, 9]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"public_tests.py\",\n    \"acceptance_tests.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Colapsa N menores\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-02-24T11:55:30Z",
+        "_author": "joao.pedro.santos@ccc.ufcg.edu.br",
+        "_ip": "45.166.25.137",
+        "_revision": 2,
+        "answer": true,
+        "category": "public",
+        "content": "def encontrar_menor(lista_numeros):\n    menor = lista_numeros[0]\n    indice_menor = 0\n    for indice in range(1, len(lista_numeros)):\n        if menor > lista_numeros[indice]:\n            menor = lista_numeros[indice]\n            indice_menor = indice\n    \n    lista_numeros.pop(indice_menor)\n    return menor\n\ndef colapsa_n_menores(N, nums):\n    soma_menores = 0\n    for k in range(N):\n        menor = encontrar_menor(nums)\n        soma_menores += menor\n    \n    nums.append(soma_menores)\n    \n    print(nums)\n\n\n",
+        "hash": "fbec7c44422f4a9110c249efa47d265e36bede75",
+        "mode": "rw",
+        "name": "sol1.py",
+        "op": "add"
+      }
+    ],
+    "iid": 4511806280171520,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 4511806280171520,
+  "key": "4511806280171520",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

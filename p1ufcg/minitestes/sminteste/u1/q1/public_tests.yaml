@@ -1,0 +1,12 @@
+- input: |
+    400
+    70
+  name: test_name
+  output: |
+    O elevador pode transportar 5 pessoas com segurança.
+- input: |
+    0
+    30
+  name: teste1
+  output: |
+    O elevador pode transportar 0 pessoas com segurança.

@@ -1,0 +1,9 @@
+Funções
+
+- definição
+- função build-in, própria e anônima
+- retorno do none como padrão
+- parâmetro padrão
+- função pura e função impura
+	- puras: faz o que deveria fazer e só
+	- impura: faz além da função dela. Produz entradas e saídas; altera valores armazenados globalmente; produz efeito colateral

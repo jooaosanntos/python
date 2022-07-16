@@ -1,0 +1,5 @@
+Listas
+
+- definição
+- pop, append
+- exemplo de extend, remove

@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global soma_matrizes_esparsas\n        undertest = __import__(module)\n        soma_matrizes_esparsas = getattr(undertest, 'soma_matrizes_esparsas', None)\n\n    def test_exemplo(self):\n        M1 = (120, 200, {(115, 64): -5})\n        M2 = (120, 200, {(20, 55): 5})\n\n        SOMA1 = soma_matrizes_esparsas(M1, M2)\n        assert SOMA1 == (120, 200, {(115, 64): -5, (20, 55): 5}), SOMA1\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Matrizes Esparsas\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6066412172869632,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 6066412172869632,
+  "key": "6066412172869632",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

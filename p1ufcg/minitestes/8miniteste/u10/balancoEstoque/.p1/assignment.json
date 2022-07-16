@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python3 public_tests.py {}\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global balanco\n        undertest = __import__(module)\n        balanco = getattr(undertest, 'balanco', None)\n\n    def test_exemplo(self):\n        d1 = {\"manteiga\": 10, \"biscoito\": 20, \"chocolate\": 30}\n        d2 = {\"manteiga\": 10, \"gelatina\": 40}\n        assert balanco(d1, d2) == {\"manteiga\": 20, \"biscoito\": 20, \"chocolate\": 30, \"gelatina\": 40}\n        assert d1 == {\"manteiga\": 10, \"biscoito\": 20, \"chocolate\": 30}\n        assert d2 == {\"manteiga\": 10, \"gelatina\": 40}\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Balanço do Estoque\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6437475335536640,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 6437475335536640,
+  "key": "6437475335536640",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

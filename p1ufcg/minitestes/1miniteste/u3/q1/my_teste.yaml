@@ -1,0 +1,10 @@
+- input: |
+    90.139
+    90.139
+  output: |
+    recorde empatado
+- input: |
+    90.13
+    90.139
+  output: |
+    recorde quebrado (90.14 kg)

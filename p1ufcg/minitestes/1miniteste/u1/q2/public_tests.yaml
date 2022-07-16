@@ -1,0 +1,20 @@
+- input: |
+    2
+    5.0
+  name: exemplo
+  output: |
+    R$ 200.00
+
+- input: |
+    0.5
+    49
+  name: teste1
+  output: |
+    R$ 490.00
+
+- input: |
+    300
+    0.01
+  name: teste2
+  output: |
+    R$ 60.00

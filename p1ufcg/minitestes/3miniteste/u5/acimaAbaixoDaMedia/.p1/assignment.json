@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    50\n    40\n    -1\n  name: exemplo 1\n  output: |\n    50 > 45.000\n    40 < 45.000\n\n- input: |\n    50\n    40\n    20\n  name: exemplo 2\n  output: |\n    50 > 45.000\n    40 < 45.000\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Acima e Abaixo da Média\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5707203992354816,
+    "index": null,
+    "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+  },
+  "iid": 5707203992354816,
+  "key": "5707203992354816",
+  "site": "prog1",
+  "user": "joao.pedro.santos@ccc.ufcg.edu.br"
+}

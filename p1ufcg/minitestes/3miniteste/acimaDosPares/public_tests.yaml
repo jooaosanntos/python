@@ -1,0 +1,25 @@
+- input: |
+    5
+    4
+    6
+    7
+    15
+    8
+  output: |
+    média dos pares: 6.0
+    acima da média: 3
+
+- input: |
+    1
+    8
+  output: |
+    média dos pares: 8.0
+    acima da média: 0
+
+- input: |
+    2
+    2
+    15
+  output: |
+    média dos pares: 2.0
+    acima da média: 1

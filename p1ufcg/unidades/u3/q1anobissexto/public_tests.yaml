@@ -1,0 +1,24 @@
+- input: |
+    2020
+  output: |
+    2020 é bissexto
+
+- input: |
+    2011
+  output: |
+    2011 não é bissexto
+
+- input: |
+    1800
+  output: |
+    1800 não é bissexto
+
+- input: |
+    4
+  output: |
+    4 é bissexto
+
+- input: |
+    400
+  output: |
+    400 é bissexto

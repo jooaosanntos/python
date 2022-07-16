@@ -1,0 +1,11 @@
+- input: |
+    sexta
+    31
+  output: |
+    domingo
+
+- input: |
+    sexta
+    357
+  output: |
+    quinta
